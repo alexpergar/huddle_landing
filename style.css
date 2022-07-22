@@ -24,7 +24,7 @@ body {
     'figure text'
     'footer footer';
     grid-template-columns: 60% 40%;
-    grid-template-rows: 15% 75% 10%;
+    grid-template-rows: 10% 85% 5%;
 
     background-color: var(--violet);
     background-image: url(images/bg-desktop.svg);
@@ -43,8 +43,7 @@ body {
     grid-area: figure;
     align-self: center;
     justify-self: right;
-    max-height: 100%;
-    max-width: 100%;
+    width: 100%;
     padding: 0 5vw;
 }
 
@@ -52,8 +51,7 @@ body {
     grid-area: text;
     align-self: center;
     justify-self: left;
-    padding: 0 5vw 8vh 0vw;
-    margin-left: -2vw;
+    padding: 0 5vw 8vh 0;
 }
 
 .motto {
@@ -116,7 +114,7 @@ body {
     'text'
     'footer';
     grid-template-columns: 100%;
-    grid-template-rows: 15vh 25vh 55vh 5vh;
+    grid-template-rows: 15vh auto auto auto;
 
     background-image: url(./images/bg-mobile.svg);
     background-size: contain;
@@ -125,13 +123,12 @@ body {
 
 .main-image {
     justify-self: center;
-    max-height: 25vh;
 }
 
 .text {
-    margin: 0 2rem;
+    margin: 3rem 2rem 0 2rem;
     align-self: center;
-    padding-right: 0;
+    padding: 0 0 5vh 0;
     text-align: center;
 }
 
@@ -148,8 +145,7 @@ body {
 
 .social-media {
     justify-self: center;
-    padding: 0;
-    margin: 0 0 9vh 0;
+    padding: 0 0 4vh 0;
 }
 
 button {
