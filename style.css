@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@400;600&display=swap');
 
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     color: white;
-}
-
-:root {
-    --violet: hsl(257, 40%, 49%);
-    --soft-magenta: hsl(300, 69%, 71%);
 }
 
 html, body {
@@ -55,17 +55,17 @@ body {
 }
 
 .motto {
+    margin-bottom: 2vh;
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
-    margin-bottom: 2vh;
 }
 
 .description {
+    margin-bottom: 3vh;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.2px;
-    margin-bottom: 3vh;
 }
 
 .social-media {
@@ -83,26 +83,28 @@ body {
 }
 
 .social-media > *:hover {
+    /* turn violet filter */
     filter: invert(75%) sepia(32%) saturate(2269%) hue-rotate(239deg) brightness(97%) contrast(88%);
     cursor: pointer;
 }
 
 button {
+    width: 12rem;
+    height: 3.5rem;
     background-color: white;
     border-width: 0;
     border-radius: 3rem;
-    width: 12rem;
-    height: 3.5rem;
-    font-family: 'Poppins', sans-serif;
     box-shadow: 2.5px 2.5px 10px rgba(0, 0, 0, 0.5);
     color: hsl(257, 40%, 49%);
+
+    font-family: 'Poppins', sans-serif;
     font-size: 1.1rem;
 }
 
 button:hover {
-    color: white;
     background-color: violet;
     cursor: pointer;
+    color: white;
 }
 
 
@@ -127,8 +129,8 @@ body {
 
 .text {
     margin: 3rem 2rem 0 2rem;
-    align-self: center;
     padding: 0 0 5vh 0;
+    align-self: center;
     text-align: center;
 }
 
